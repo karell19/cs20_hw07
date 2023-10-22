@@ -1,147 +1,145 @@
-{
-    "sale": [
-        {
-            "name": "Tabi Ankle-Boots",
-            "description": "Black, leather 2-inch ankle boots. Feature signature \"tabi\" split-toe and hook closure.",
-            "sizes": [40, 41, 42],
-            "price": "$1,190",
-            "categories": [
-                "Last in-stock",
-                "Shoes",
-                "Boots",
-                "Leather"
-            ]
-        },
-        {
-            "name": "Light-Wash Jeans",
-            "description": "Blue, light-wash jeans with front and back pockets.",
-            "sizes": [28, 30, 32, 34, 36],
-            "price": "$50",
-            "categories": [
-                "In-stock",
-                "Clothing",
-                "Bottoms",
-                "Pants",
-                "Denim"
-            ]
-        },
-        {
-            "name": "Corduroy Jacket",
-            "description": "Dark brown, corduroy bomber jacket with fleece lining.",
-            "sizes": ["S", "M", "L", "XL"],
-            "price": "$150",
-            "categories": [
-                "In-stock",
-                "Clothing",
-                "Jackets",
-                "Autumn Sale"
-            ]
-        },
-        {
-            "name": "Ruby Necklace",
-            "description": "24-karat gold necklace featuring ruby gemstone pendant.",
-            "sizes": ["16\" Chain", "18\" Chain", "20\" Chain"],
-            "price": "$10,000",
-            "categories": [
-                "Last in-stock",
-                "Jewelry"
-            ]
-        },
-        {
-            "name": "Tufts University Crewneck",
-            "description": "Oversized, grey crewneck featuring \"Tufts University\" logo.",
-            "sizes": ["S", "M", "L", "XL"],
-            "price": "$90",
-            "categories": [
-                "In-stock",
-                "Clothing",
-                "Tops",
-                "Hoodies and Sweatshirts",
-                "Autumn Sale"
-            ]
-        },
-        {
-            "name": "Red-Sox Baseball Hat",
-            "description": "Navy baseball hat with \"Red Sox\" logo.",
-            "sizes": ["One-size"],
-            "price": "$100",
-            "categories": [
-                "In-stock",
-                "Accessories",
-                "Hats"
-            ]
-        },
-        {
-            "name": "I &#9829; New York Tee",
-            "description": "White tee featuring iconig \"I &#9829; New York Tee\" text.",
-            "sizes": ["S"],
-            "price": "$30",
-            "categories": [
-                "In-stock",
-                "Clothing",
-                "Tops",
-                "T-shirts"
-            ]
-        },
-        {
-            "name": "Classic Uggs",
-            "description": "Australian, chestnut uggs.",
-            "sizes": [30, 32, 34],
-            "price": "$200",
-            "categories": [
-                "In-stock",
-                "Shoes",
-                "Boots",
-                "Autumn Sale"
-            ]
-        },
-        {
-            "name": "Parka",
-            "description": "Parka fit for cold, rainy, snowy conditions.",
-            "sizes": ["M", "L", "XL"],
-            "price": "$300",
-            "categories": [
-                "In-stock",
-                "Clothing",
-                "Jackets"
-            ]
-        },
-        {
-            "name": "Wool Socks",
-            "description": "Pair of warm, wool socks.",
-            "sizes": ["S", "M"],
-            "price": "$30",
-            "categories": [
-                "In-stock",
-                "Clothing",
-                "Accessories",
-                "Socks",
-                "Autumn Sale"
-            ]
-        },
-        {
-            "name": "Quilted Sweatshirt",
-            "description": "Cozy, brown, quilted sweatshirt.",
-            "sizes": ["S", "M", "L", "XL"],
-            "price": "$80",
-            "categories": [
-                "In-stock",
-                "Clothing",
-                "Tops",
-                "Hoodies and Sweatshirts",
-                "Autumn Sale"
-            ]
-        },
-        {
-            "name": "Air Force 1 Sneakers",
-            "description": "Classic, white \"Air Force 1\" sneakers.",
-            "sizes": ["10M"],
-            "price": "$120",
-            "categories": [
-                "In-stock",
-                "Shoes",
-                "Sneakers"
-            ]
-        }
-    ]
-}
+[
+    {
+        "name": "Tabi Ankle-Boots",
+        "description": "Black, leather 2-inch ankle boots. Feature signature \"tabi\" split-toe and hook closure.",
+        "sizes": [40, 41, 42],
+        "price": "$1,190",
+        "categories": [
+            "Last in-stock",
+            "Shoes",
+            "Boots",
+            "Leather"
+        ]
+    },
+    {
+        "name": "Light-Wash Jeans",
+        "description": "Blue, light-wash jeans with front and back pockets.",
+        "sizes": [28, 30, 32, 34, 36],
+        "price": "$50",
+        "categories": [
+            "In-stock",
+            "Clothing",
+            "Bottoms",
+            "Pants",
+            "Denim"
+        ]
+    },
+    {
+        "name": "Corduroy Jacket",
+        "description": "Dark brown, corduroy bomber jacket with fleece lining.",
+        "sizes": ["S", "M", "L", "XL"],
+        "price": "$150",
+        "categories": [
+            "In-stock",
+            "Clothing",
+            "Jackets",
+            "Autumn Sale"
+        ]
+    },
+    {
+        "name": "Ruby Necklace",
+        "description": "24-karat gold necklace featuring ruby gemstone pendant.",
+        "sizes": ["16\" Chain", "18\" Chain", "20\" Chain"],
+        "price": "$10,000",
+        "categories": [
+            "Last in-stock",
+            "Jewelry"
+        ]
+    },
+    {
+        "name": "Tufts University Crewneck",
+        "description": "Oversized, grey crewneck featuring \"Tufts University\" logo.",
+        "sizes": ["S", "M", "L", "XL"],
+        "price": "$90",
+        "categories": [
+            "In-stock",
+            "Clothing",
+            "Tops",
+            "Hoodies and Sweatshirts",
+            "Autumn Sale"
+        ]
+    },
+    {
+        "name": "Red-Sox Baseball Hat",
+        "description": "Navy baseball hat with \"Red Sox\" logo.",
+        "sizes": ["One-size"],
+        "price": "$100",
+        "categories": [
+            "In-stock",
+            "Accessories",
+            "Hats"
+        ]
+    },
+    {
+        "name": "I &#9829; New York Tee",
+        "description": "White tee featuring iconig \"I &#9829; New York Tee\" text.",
+        "sizes": ["S"],
+        "price": "$30",
+        "categories": [
+            "In-stock",
+            "Clothing",
+            "Tops",
+            "T-shirts"
+        ]
+    },
+    {
+        "name": "Classic Uggs",
+        "description": "Australian, chestnut uggs.",
+        "sizes": [30, 32, 34],
+        "price": "$200",
+        "categories": [
+            "In-stock",
+            "Shoes",
+            "Boots",
+            "Autumn Sale"
+        ]
+    },
+    {
+        "name": "Parka",
+        "description": "Parka fit for cold, rainy, snowy conditions.",
+        "sizes": ["M", "L", "XL"],
+        "price": "$300",
+        "categories": [
+            "In-stock",
+            "Clothing",
+            "Jackets"
+        ]
+    },
+    {
+        "name": "Wool Socks",
+        "description": "Pair of warm, wool socks.",
+        "sizes": ["S", "M"],
+        "price": "$30",
+        "categories": [
+            "In-stock",
+            "Clothing",
+            "Accessories",
+            "Socks",
+            "Autumn Sale"
+        ]
+    },
+    {
+        "name": "Quilted Sweatshirt",
+        "description": "Cozy, brown, quilted sweatshirt.",
+        "sizes": ["S", "M", "L", "XL"],
+        "price": "$80",
+        "categories": [
+            "In-stock",
+            "Clothing",
+            "Tops",
+            "Hoodies and Sweatshirts",
+            "Autumn Sale"
+        ]
+    },
+    {
+        "name": "Air Force 1 Sneakers",
+        "description": "Classic, white \"Air Force 1\" sneakers.",
+        "sizes": ["10M"],
+        "price": "$120",
+        "categories": [
+            "In-stock",
+            "Shoes",
+            "Sneakers"
+        ]
+    }
+]

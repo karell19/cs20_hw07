@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>JSON1: String format.</title>
+        <title>JSON2: .get</title>
         <meta name="author" content="Kevin Arellano Flores">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"   
                 integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   
@@ -10,6 +10,14 @@
         </script>
     </head>
     <body>
-
+        <div id="json_string"></div>
+        <script language="javascript">
+            $.get("https://karell19.github.io/cs20_hw07/products.json", 
+                function( data ) {
+                    str = JSON.stringify(data);		//data is a json object
+                    document.getElementById('json_string').innerHTML = str;
+                    }
+            ) 
+        </script>
     </body>
 </html>
