@@ -18,6 +18,18 @@
                     var str = JSON.stringify(data);	
                     var list_js = "<ul>";	
                     data.forEach(function(product) {
+                        list_js = "<ul>";
+                        data.forEach(function(product) {
+                            list_js += "<li>" + product.name + "<br>" 
+                                            + product.description + "<br>" 
+                                            + product.sizes + "<br>" 
+                                            + product.price + "<br>" 
+                                            + product.categories + "</li>";
+                        })
+
+                        list_js += "</ul>";
+                        document.getElementById("categories").innerHTML = list_js;
+
                         list_products.push(product);
 
                         for (var i = 0; i < product.categories.length; i++) {
