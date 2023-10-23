@@ -11,20 +11,14 @@
     </head>
     <body>
         <script language="javascript">
-            var str;
-            var json_js_array;
-            var list_js;
+            var list_categories = [];
+            var list_products = [];
             $.get("https://karell19.github.io/cs20_hw07/products.json", 
                 function( data ) {
-                    str = JSON.stringify(data);	
-                    list_js = "<ul>";	
-                    list_categories = []
+                    var str = JSON.stringify(data);	
+                    var list_js = "<ul>";	
                     data.forEach(function(product) {
-                        list_js += "<li>" + product.name + "<br>" 
-                                          + product.description + "<br>" 
-                                          + product.sizes + "<br>" 
-                                          + product.price + "<br>" 
-                                          + product.categories + "</li>";
+                        list_products.push(product);
 
                         for (var i = 0; i < product.categories.length; i++) {
                             if (!list_categories.includes(product.categories[i])) {
@@ -33,14 +27,38 @@
                         }
                     })    
 
-                    list_js += "</ul>";
-                    // document.getElementById("categories").innerHTML += list_js;
-                })
+                    var select_filters = document.createElement("select");
+                    select_filters.id = "filter_selector";
+                    select_filters.addEventListener("click", displayFiltered);
+                    for (var i = 0; i < list_categories.length; i++) {
+                        var category = document.createElement("option");
+                        category.value = list_categories[i];
+                        category.innerHTML = list_categories[i];
+                        category.id = list_categories[i];
+                        select_filters.appendChild(category);
+                    }
+
+                    document.getElementById("filters").appendChild(select_filters);
+            })
+
+            function displayFiltered() {
+                var displayed_div = document.getElementById("categories");
+                var list_js = "<ul>";
+                for (var i = 0; i < list_products.length; i++) {
+                    if (list_products[i]["categories"].includes(this.value)) {
+                        list_js += "<li>" + list_products[i]["name"] + "<br>" 
+                                          + list_products[i]["description"] + "<br>" 
+                                          + list_products[i]["sizes"] + "<br>" 
+                                          + list_products[i]["price"] + "<br>" 
+                                          + list_products[i]["categories"] + "</li><br>";
+                    }
+                }
+                list_js += "</ul>";
+                displayed_div.innerHTML = list_js;
+            }
         </script>
         <div id="json_string"></div>
-        <div id="select_filter">
-            
-        </div>
-        <div id="categories">Categories:<br></div>
+        <div id="filters"></div>
+        <div id="categories"><br></div>
     </body>
 </html>
