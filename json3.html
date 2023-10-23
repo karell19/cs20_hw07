@@ -46,11 +46,7 @@
                 var list_js = "<ul>";
                 for (var i = 0; i < list_products.length; i++) {
                     if (list_products[i]["categories"].includes(this.value)) {
-                        list_js += "<li>" + list_products[i]["name"] + "<br>" 
-                                          + list_products[i]["description"] + "<br>" 
-                                          + list_products[i]["sizes"] + "<br>" 
-                                          + list_products[i]["price"] + "<br>" 
-                                          + list_products[i]["categories"] + "</li><br>";
+                        list_js += "<li>" + list_products[i]["name"] + "</li><br>";
                     }
                 }
                 list_js += "</ul>";
