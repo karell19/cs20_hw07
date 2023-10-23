@@ -10,14 +10,27 @@
         </script>
     </head>
     <body>
-        <div id="json_string"></div>
         <script language="javascript">
+            var str;
+            var json_js_array;
+            var list_js;
             $.get("https://karell19.github.io/cs20_hw07/products.json", 
                 function( data ) {
-                    str = JSON.stringify(data);		//data is a json object
-                    document.getElementById('json_string').innerHTML = str;
-                    }
-            ) 
+                    str = JSON.stringify(data);		
+                    list_js = "<ul>";
+                    data.forEach(function(product) {
+                        list_js += "<li>" + product.name + "<br>" 
+                                        + product.description + "<br>" 
+                                        + product.sizes + "<br>" 
+                                        + product.price + "<br>" 
+                                        + product.categories + "</li>";
+                    })
+
+                    list_js += "</ul>";
+                    document.getElementById("json_list").innerHTML += list_js;
+                })
         </script>
+        <div id="json_string"></div>
+        <div id="json_list">Products List:<br></div>
     </body>
 </html>
