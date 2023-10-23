@@ -18,7 +18,6 @@
                     var str = JSON.stringify(data);	
                     var list_js = "<ul>";	
                     data.forEach(function(product) {
-                        list_js = "<ul>";
                         data.forEach(function(product) {
                             list_js += "<li>" + product.name + "<br>" 
                                             + product.description + "<br>" 
@@ -26,7 +25,6 @@
                                             + product.price + "<br>" 
                                             + product.categories + "</li>";
                         })
-
                         list_js += "</ul>";
                         document.getElementById("categories").innerHTML = list_js;
 
@@ -46,7 +44,6 @@
                         var category = document.createElement("option");
                         category.value = list_categories[i];
                         category.innerHTML = list_categories[i];
-                        category.id = list_categories[i];
                         select_filters.appendChild(category);
                     }
 
