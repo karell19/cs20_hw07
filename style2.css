@@ -1,0 +1,16 @@
+.json_list {
+    background-color: #d1cabe;
+    text-align: center;
+    font-weight: bold;
+    padding: 5%;
+    margin: 5%;
+}
+.json_list ul li {
+    text-align: left;
+    width: auto;
+    background-color: #ebe2d3;
+    margin: 3%;
+    padding: 5%;
+    border-radius: 10px;
+    list-style-type: none;
+}

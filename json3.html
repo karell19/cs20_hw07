@@ -9,14 +9,13 @@
                 crossorigin="anonymous">
         </script>
     </head>
-    <body>
+    <body style="background-color: #5c4e45">
         <script language="javascript">
             var list_categories = [];
             var list_products = [];
             $.get("https://karell19.github.io/cs20_hw07/products.json", 
                 function( data ) {
                     var str = JSON.stringify(data);	
-                    var list_js = "<ul>";	
                     data.forEach(function(product) {
                         list_products.push(product);
 
@@ -29,6 +28,7 @@
 
                     var select_filters = document.createElement("select");
                     select_filters.id = "filter_selector";
+                    select_filters.style = "padding: 5px; width: auto; text-align: center; background-color: #d1cabe; width: auto;";
                     select_filters.addEventListener("click", displayFiltered);
                     for (var i = 0; i < list_categories.length; i++) {
                         var category = document.createElement("option");
@@ -45,15 +45,15 @@
                 var list_js = "<ul>";
                 for (var i = 0; i < list_products.length; i++) {
                     if (list_products[i]["categories"].includes(this.value)) {
-                        list_js += "<li>" + list_products[i]["name"] + "</li><br>";
+                        list_js += "<li style='width: auto; list-style-type: none; background-color: #ebe2d3; margin: 3%; padding: 5%; border-radius: 10px;'>" + list_products[i]["name"] + "</li><br>";
                     }
                 }
                 list_js += "</ul>";
                 displayed_div.innerHTML = list_js;
+                displayed_div.style = "background-color: #d1cabe; text-align: center; font-weight: bold; padding: 5%; margin: 5%;";
             }
         </script>
-        <div id="json_string"></div>
         <div id="filters"></div>
-        <div id="categories"><br></div>
+        <div id="categories"></div>
     </body>
 </html>

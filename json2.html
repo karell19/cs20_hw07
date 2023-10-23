@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <title>JSON2: .get</title>
         <meta name="author" content="Kevin Arellano Flores">
+        <link rel="stylesheet" type="text/css" href="style2.css">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"   
                 integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   
                 crossorigin="anonymous">
         </script>
     </head>
-    <body>
+    <body style="background-color: #5c4e45">
         <script language="javascript">
             var str;
             var json_js_array;
@@ -21,16 +22,15 @@
                     data.forEach(function(product) {
                         list_js += "<li>" + product.name + "<br>" 
                                           + product.description + "<br>" 
-                                          + product.sizes + "<br>" 
+                                          + product.sizes.join(", ") + "<br>" 
                                           + product.price + "<br>" 
-                                          + product.categories + "</li>";
+                                          + product.categories.join(", ") + "</li>";
                     })
 
                     list_js += "</ul>";
                     document.getElementById("json_list").innerHTML += list_js;
                 })
         </script>
-        <div id="json_string"></div>
-        <div id="json_list">Products List:<br></div>
+        <div id="json_list" class="json_list">Products List<br></div>
     </body>
 </html>
