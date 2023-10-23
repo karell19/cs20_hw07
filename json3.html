@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>JSON2: .get</title>
+        <title>JSON3: Filtering Data</title>
         <meta name="author" content="Kevin Arellano Flores">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"   
                 integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   
@@ -16,21 +16,31 @@
             var list_js;
             $.get("https://karell19.github.io/cs20_hw07/products.json", 
                 function( data ) {
-                    str = JSON.stringify(data);		
-                    list_js = "<ul>";
+                    str = JSON.stringify(data);	
+                    list_js = "<ul>";	
+                    list_categories = []
                     data.forEach(function(product) {
                         list_js += "<li>" + product.name + "<br>" 
                                           + product.description + "<br>" 
                                           + product.sizes + "<br>" 
                                           + product.price + "<br>" 
                                           + product.categories + "</li>";
-                    })
+
+                        for (var i = 0; i < product.categories.length; i++) {
+                            if (!list_categories.includes(product.categories[i])) {
+                                list_categories.push(product.categories[i]);
+                            }
+                        }
+                    })    
 
                     list_js += "</ul>";
-                    document.getElementById("json_list").innerHTML += list_js;
+                    // document.getElementById("categories").innerHTML += list_js;
                 })
         </script>
         <div id="json_string"></div>
-        <div id="json_list">Products List:<br></div>
+        <div id="select_filter">
+            
+        </div>
+        <div id="categories">Categories:<br></div>
     </body>
 </html>
